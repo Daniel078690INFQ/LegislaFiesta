@@ -1,15 +1,10 @@
 package ifsul.lp.repository;
 
 import java.util.List;
-
 import org.springframework.data.jpa.repository.JpaRepository;
-
 import ifsul.lp.entities.Evento;
 
-public interface EventoRepository extends JpaRepository<Evento, Integer> {
+public interface EventoRepository extends JpaRepository<Evento, Long>{
 
-	Evento findAllById(int id);
-
-	List<Evento> listarInscricoesDeputado(int id);
-
+	List<Evento> findAllByDeputadosListId(Long id);
 }
