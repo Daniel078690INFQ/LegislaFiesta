@@ -68,6 +68,14 @@ public class Deputado implements Serializable {
 		this.siglaUF = siglaUF;
 	}
 
+	public java.util.List<Evento> getEventos() {
+		return eventos;
+	}
+
+	public void setEventos(java.util.List<Evento> eventos) {
+		this.eventos = eventos;
+	}
+
 	@Override
 	public String toString() {
 		return "Deputado [id= " + id + ", nomeCivil= " + nomeCivil + ", siglaPartido= " + siglaPartido + ", siglaUF= "

@@ -8,6 +8,6 @@ import ifsul.lp.entities.Deputado;
 
 public interface DeputadoRepository extends JpaRepository<Deputado, Integer> {
 
-    List<Deputado> findAllById(int id);
+    Deputado findAllById(int id);
 
 }

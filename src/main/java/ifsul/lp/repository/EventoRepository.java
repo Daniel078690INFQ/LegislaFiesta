@@ -8,6 +8,8 @@ import ifsul.lp.entities.Evento;
 
 public interface EventoRepository extends JpaRepository<Evento, Integer> {
 
-	List<Evento> findAllById(int id);
+	Evento findAllById(int id);
+
+	List<Evento> listarInscricoesDeputado(int id);
 
 }
